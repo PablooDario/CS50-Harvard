@@ -10,11 +10,12 @@ def main():
         print(f"{quant}%")
 
 def fuel():
+    #prompt the user for a fraction
     while True:
         quantity = input("Fraction: ")
         idx = quantity.find('/')
 
-        # x or y is not an integer
+        # check if x and y are integers
         try:
             x = int(quantity[:idx])
             y = int(quantity[idx+1:])

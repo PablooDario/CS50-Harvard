@@ -17,15 +17,18 @@ def main():
 
 def order(menu):
     total = float(0)
+    # prompt the user for his order
     while True:
         try:
             item = input("Item: ").title()
+        # if the user does not prompt nothing
         except EOFError:
             print()
             return 
         try:
             total += menu[item]
             print(f"${total:.2f}")
+        # if the item is not in the dictionary
         except KeyError:
             continue
 
