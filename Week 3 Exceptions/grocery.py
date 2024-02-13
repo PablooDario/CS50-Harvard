@@ -8,12 +8,16 @@ def main():
         print(items[key], key)
     
 def grocery_list():
+    # Create Dictionary
     items = dict() 
+    # Prompr user for an item
     while True:
         try:
             item = input().upper()
+        # If the user doesn't prompt nothing the while lopp finish
         except EOFError:
             return items
+        # Count the items
         try:
             items[item] +=1
         except KeyError:
