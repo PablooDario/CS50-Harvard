@@ -5,3 +5,4 @@ Repository created to store some key concepts and assignments of the Harvard CS5
 - [Week 2 Loops:](Week%202%20Loops) What are loops and the different cycles that exist, `while`, `for`, lists and dictionaries.
 - [Week 3 Exceptions:](Week%203%20Exceptions) How to handle errors with `try`and `except`. Exceptions, value errors, runtime errors.
 - [Week 4 Libraries:](Week%204%20Libraries) What are libraires, modules and packages. Examples like Statistics, Random and APIs.
+- [Week 5 UnitTest:](Week%205%20UnitTest) How to hanlde errors with `assert`. Make Unit Tests with `pytest` good practices to make unit tests and handle unit tests in a whole folder or package.
