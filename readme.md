@@ -6,3 +6,4 @@ Repository created to store some key concepts and assignments of the Harvard CS5
 - [Week 3 Exceptions:](Week%203%20Exceptions) How to handle errors with `try`and `except`. Exceptions, value errors, runtime errors.
 - [Week 4 Libraries:](Week%204%20Libraries) What are libraires, modules and packages. Examples like Statistics, Random and APIs.
 - [Week 5 UnitTest:](Week%205%20UnitTest) How to hanlde errors with `assert`. Make Unit Tests with `pytest` good practices to make unit tests and handle unit tests in a whole folder or package.
+- [Week 6 Files:](Week%206%20Files) How to open files with python so we can modify those files writing, appending or reading their content, also how to manipulate the CSV files with more flexibility with the `csv` module.
