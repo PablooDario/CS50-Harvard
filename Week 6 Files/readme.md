@@ -77,7 +77,7 @@ with open("students.csv") as file:
 for student in sorted(students, key=lambda student: student["name"]):
     print(f"{student['name']} is in {student['home']}")
 ```
-We also can write in our CSV file
+We also can write or append in our CSV file
 
 ```Python
 import csv
