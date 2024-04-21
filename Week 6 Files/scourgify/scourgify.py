@@ -23,6 +23,7 @@ def main():
         sys.exit("Could not read", path[1])
 
     with open(path[2], 'w', newline='') as csvfile:
+        #Create Header for the CSV File
         fieldnames = ['first', 'last', 'house']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
