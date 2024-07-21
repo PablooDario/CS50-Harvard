@@ -1,5 +1,6 @@
 import random
 
+print("Guess the random number between 1 and the Level you choose!")
 n = 0
 while n < 1:
     try:

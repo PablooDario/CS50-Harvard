@@ -2,9 +2,10 @@ import random
 
 
 def main():
+    print("Compute the following operations, you can choose between 3 levels. You have 3 opportunities")
     n = get_level()
     score = generate_integer(n)
-    print(f"Score: {score}")
+    print(f"Score: {score}/10")
 
 def get_level():
     levels = [1, 2, 3]
@@ -18,7 +19,7 @@ def get_level():
 
 
 def generate_integer(level):
-    grade = 10
+    grade = 0
     if level == 1:
         a, b = 0, 9
     elif level == 2:
@@ -33,6 +34,7 @@ def generate_integer(level):
             try:
                 user = int(input(f"{x} + {y} = "))
                 if user == z:
+                    grade += 1
                     break
                 else:
                     print("EEE")
@@ -41,8 +43,7 @@ def generate_integer(level):
                 print("EEE")
                 error += 1
         if error == 3:
-            print(f"{x} + {y} = {z}")
-            grade -= 1
+            break
     return grade
 
 if __name__ == "__main__":
