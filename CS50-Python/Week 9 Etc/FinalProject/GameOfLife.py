@@ -70,7 +70,15 @@ class Game:
         return 0 <= x < self.grid_size and 0 <= y < self.grid_size
 
     def _update_grid(self):
-        
+        '''
+        Update the grid to the next state based on the Game of Life rules.
+
+        This function iterates over each cell in the grid, counts its alive neighbors,
+        determines the cell's next state using the Game of Life rules, and updates the
+        grid accordingly. The cell's color is set based on whether it is alive or dead.
+
+        :return: None
+        '''
         new_grid = np.zeros_like(self.grid)
         for i in range(self.grid_size):
             for j in range(self.grid_size):
