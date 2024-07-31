@@ -7,7 +7,7 @@
 - Addresses, such as 1234 Main Street
 - Scans of packages, which represent confirmations a delivery driver picked up or dropped off a given package
 
-![ER Packages](ER-Packages.png)
+![ER Packages](../imgs/ER-Packages.png)
 
 ## Addresses Table
 
