@@ -6,3 +6,5 @@ Repository created to store some key concepts and assignments of the Harvard CS5
 - [Week 1 - Relating:](Week%201%20Relating/) Relationships in the DataBases, E-R Diagram, Subqueries, JOIN and Groups.
 - [Week 2 - Designing:](Week%202%20Designing/) Normalizing a DataBase, `CREATE TABLE`, Data Type and Storage Class, Table and Column Constraints (`PRIMARY KEY`, `FOREIGN KEY`) (`NOT NULL`, `CHECK`, `DEFAULT`, `UNIQUE`), Altering Tables (`RENAME TO`, `DROP TABLE`, `DROP COLUMN`, `ADD COLUMN`). 
 - [Week 3 - Writing:](Week%203%20Writing/) Insert data into tables, import files, delete data, create `constraints`for foreign keys, update data, `CREATE TRIGGER`.
+- [Week 4 - Viewing:](Week%204%20Viewing/) Create a `VIEW`for *Simplifying*, *Aggregating*, *Partitioning* and *Securing* our tables, also when and how to use a **Common Table Expression**, 
+- [Week 5 - Optimizing:](Week%205%20Optimizing/) Optimize our SQL queries usign **indexes** and **partial indexes** to also optimize space, delete unused space in our database with `VACUUM`, use a `TRANSACTION`as an individual unit of work for mutiple queries
