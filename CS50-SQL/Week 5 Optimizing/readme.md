@@ -49,7 +49,7 @@ A **covering index** means that all the information needed for the query **can b
 
 An index is stored in a database as a data structure called a **B-Tree**, or balanced tree. A tree data structure looks something like:
 
-![B-Tree](\imgs\B-Tree.png)
+![B-Tree](imgs/B-Tree.png)
 
 If the movie titles were sorted alphabetically, it would be a lot easier to find a particular movie by using binary search.
 
