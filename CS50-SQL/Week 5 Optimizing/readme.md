@@ -64,10 +64,31 @@ Similar to the space trade-off we discussed earlier, **it also takes longer to i
 This is an index that includes only a subset of rows from a table, allowing us to save some space that a full index would occupy. This is especially useful when we know that users query only a subset of rows from the table.
 
 ```sql
-EXPLAIN QUERY PLAN
-SELECT "title" FROM "movies"
+CREATE INDEX "recents" ON "movies" ("titles")
 WHERE "year" = 2023;
 ```
+
+### Understanding Explain Query
+
+- If you see a step labeled as `USING INDEX`, it signifies that the query is leveraging an index in that step.
+- If you see a step labeled as `USING COVERING INDEX`, it indicates that the query is using a covering index in that step.
+    - Recall that a **covering index** is a special type of index that **includes all the columns needed for the query.** This means the database can fulfill the query directly from the index without having to look up additional data in a table.
+- If you see a step labeled as `USING INTEGER PRIMARY KEY`, it implies that the query is utilizing the index on the primary key column, which is provided automatically by SQLite when the primary key is of the INTEGER type affinity. It is an efficient way to access rows directly if the query conditions involve a table’s primary key.
+
+```SQL
+QUERY PLAN
+|--SEARCH messages USING INDEX search_messages_by_from_user_id (from_user_id=?)
+|--SCALAR SUBQUERY 1
+|  `--SEARCH users USING COVERING INDEX sqlite_autoindex_users_1 (username=?)
+|--USE TEMP B-TREE FOR GROUP BY
+`--USE TEMP B-TREE FOR ORDER BY
+```
+
+Notice that this query involves several steps, and that it uses indexes to accomplish most:
+
+- The first step searches the index search_messages_by_from_user_id.
+- The second step searches the index sqlite_autoindex_users_1.
+- The final steps use temporary B-trees to group and order the results.
 
 ## Vacuum
 
