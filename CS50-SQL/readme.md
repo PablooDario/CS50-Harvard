@@ -4,10 +4,11 @@ Repository created to store some key concepts and assignments of the Harvard CS5
 
 ## Table of contents:
 
-- [Week 0 - Querying:](Week%200%20Querying/) Basic Concepts of DataBases and introduction to SQL queries.
-- [Week 1 - Relating:](Week%201%20Relating/) Relationships in the DataBases, E-R Diagram, Subqueries, JOIN and Groups.
-- [Week 2 - Designing:](Week%202%20Designing/) Normalizing a DataBase, `CREATE TABLE`, Data Type and Storage Class, Table and Column Constraints (`PRIMARY KEY`, `FOREIGN KEY`) (`NOT NULL`, `CHECK`, `DEFAULT`, `UNIQUE`), Altering Tables (`RENAME TO`, `DROP TABLE`, `DROP COLUMN`, `ADD COLUMN`). 
-- [Week 3 - Writing:](Week%203%20Writing/) Insert data into tables, import files, delete data, create `constraints`for foreign keys, update data, `CREATE TRIGGER`.
-- [Week 4 - Viewing:](Week%204%20Viewing/) Create a `VIEW`for *Simplifying*, *Aggregating*, *Partitioning* and *Securing* our tables, also when and how to use a **Common Table Expression**, 
-- [Week 5 - Optimizing:](Week%205%20Optimizing/) Optimize our SQL queries usign **indexes** and **partial indexes** to also optimize space, delete unused space in our database with `VACUUM`, use a `TRANSACTION`as an individual unit of work for mutiple queries
-- [Week 6 - Scaling:](Week%206%20Scaling/) Scale our Databases using other RDBMS like `MySQL` which have different syntax from other RDBMS and also other options like `ENUM`, `SET`, `PROCEDURES`, `PREPARE STATEMENTS` to avoid SQL Injections Attacks, etc... Controlling the access of different users and different types of scaling like **vertical** and **horizontal**.
+- [Week 0 - Querying:](Week%200%20Querying/) Introduction to basic database concepts and SQL queries.
+- [Week 1 - Relating:](Week%201%20Relating/) Understanding relationships in databases, creating E-R diagrams, using subqueries, and mastering JOINs and GROUPs.
+- [Week 2 - Designing:](Week%202%20Designing/)  Learn how to normalize a database, use `CREATE TABLE`, understand data types and storage classes, and apply table and column constraints like `PRIMARY KEY`, `FOREIGN KEY`, `NOT NULL`, `CHECK, DEFAULT`, and `UNIQUE`. Plus, how to alter tables with `RENAME TO`, `DROP TABLE`, `DROP COLUMN`, and `ADD COLUMN`.
+- [Week 3 - Writing:](Week%203%20Writing/) Insert data into tables, import files, delete data, create constraints for foreign keys, update data, and use `CREATE TRIGGER` to automate actions.
+- [Week 4 - Viewing:](Week%204%20Viewing/) Learn how to create a `VIEW` for simplifying, aggregating, partitioning, and securing our tables. Also, understand when and how to use a Common Table Expression (CTE).
+- [Week 5 - Optimizing:](Week%205%20Optimizing/) Optimize SQL queries using indexes and partial indexes to improve performance and save space. Clean up the database with `VACUUM`, and use `TRANSACTION` to handle multiple queries as a single unit of work
+- [Week 6 - Scaling:](Week%206%20Scaling/) Explore scaling databases with other RDBMS like `MySQL`, which may have different syntax. Learn about options like `ENUM`, `SET`, `PROCEDURES`, and `PREPARE STATEMENTS` to avoid SQL injection attacks. Understand access control for different users and the difference between vertical and horizontal scaling.
+- [Final Project:](Project/) This project involved the design and implementation of a database system to emulate Spotify's data management structure. The database schema included tables for users, artists, albums, songs, and user-created playlists, maintaining the relationships between these entities. The project utilized both Data Definition Language (DDL) for creating the database schema and Data Manipulation Language (DML) for populating and querying the data.
